@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>{$title}</title>
+    </head> 
+    <body>
+    <include file="header" />
+    <main>
+        hello {$name} <br/> 
+        <ul>
+        <volist name="data" id="vo"> 
+         <li>{$vo.id}:{$vo.name}</li>
+        </volist>
+        
+        </ul>
+    </main> 
+    <include file="footer" />
+    </body>
+</html>
